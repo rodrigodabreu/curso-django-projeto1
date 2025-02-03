@@ -83,3 +83,12 @@ http://localhost:8000/api/
 ```
 http://localhost:8000/api/docs/
 ```
+
+### Recriando o ambiente virtual
+
+```
+rm -rf venv       # Remove o ambiente virtual antigo
+python -m venv venv  # Cria um novo
+source venv/bin/activate  # Ative novamente
+pip install django  # Reinstale o Django
+```
