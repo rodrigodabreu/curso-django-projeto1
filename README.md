@@ -92,3 +92,9 @@ python -m venv venv  # Cria um novo
 source venv/bin/activate  # Ative novamente
 pip install django  # Reinstale o Django
 ```
+
+### Comando para rodar as migrations
+
+```
+python manage.py migrate
+```
