@@ -98,3 +98,5 @@ pip install django  # Reinstale o Django
 ```
 python manage.py migrate
 ```
+
+[Recomendação de leitura da documentação relacionada a model](https://docs.djangoproject.com/pt-br/3.2/ref/models/fields/)
