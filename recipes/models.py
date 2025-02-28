@@ -26,3 +26,6 @@ class Recipe(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=65)
+    def __str__(self): #função criada para que seja visualizado o nome da categoria no painel de admin de categoria
+        return self.name
+    

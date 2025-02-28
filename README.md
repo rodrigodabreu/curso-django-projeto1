@@ -95,8 +95,22 @@ pip install django  # Reinstale o Django
 
 ### Comando para rodar as migrations
 
+Primeiro devemos gerar as migrations das models
+
+```
+python manage.py makemigrations
+```
+
+Após, vamos de fato migrar para o banco de dados
+
 ```
 python manage.py migrate
 ```
 
 [Recomendação de leitura da documentação relacionada a model](https://docs.djangoproject.com/pt-br/3.2/ref/models/fields/)
+
+### criando o usuario admin para a área administrativa
+
+```
+python manage.py createsuperuser
+```
