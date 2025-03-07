@@ -6,6 +6,7 @@ app_name = 'recipes'
 
 urlpatterns = [
     path('', views.home, name='home'), #dessa forma o django vai entender que quando a rota recipes/ vai ser chamada, ele vai chamar a função home
+    path('recipes/category/<int:category_id>/', views.category, name='category'), #dessa forma o django vai entender que quando a rota recipes/1 vai ser chamada, ele vai chamar a função recipe
     path('recipes/<int:id>/', views.recipe, name='recipe'), #dessa forma o django vai entender que quando a rota recipes/1 vai ser chamada, ele vai chamar a função recipe
 ]
 

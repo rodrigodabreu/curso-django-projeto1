@@ -114,3 +114,13 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
+
+### Acessando o shell do Django
+
+```
+python manage.py shell
+```
+
+### Documentação QuerySet API reference
+
+https://docs.djangoproject.com/pt-br/3.2/ref/models/querysets/
