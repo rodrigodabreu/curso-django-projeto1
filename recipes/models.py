@@ -25,7 +25,11 @@ class Recipe(models.Model):
                                         default=None #no Python o valor null é None
                                 ) #criando o relacionamento de uma model com outra
     author = models.ForeignKey(
-        User, on_delete=models.SET_NULL, null=True
+        User, 
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        default=None
     )
     # __ (underline underline) é chamado de thunder no Python
     def __str__(self): #função criada para que seja visualizado o nome da categoria no painel de admin de categoria
