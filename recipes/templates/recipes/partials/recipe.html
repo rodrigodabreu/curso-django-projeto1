@@ -30,7 +30,6 @@
           <span class="recipe-author-item">
             <a href="{% url "recipes:category" recipe.category.id %}">
               <i class="fas fa-layer-group"></i>
-              {{ recipe.category.name }} (ID: {{ recipe.category.id }})
               {{recipe.category.name}}
             </a>
           </span>
