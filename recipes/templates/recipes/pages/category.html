@@ -1,7 +1,7 @@
 {% extends "global/base.html" %}
 
 {% if recipe.category is not None %}
-  {% block title %} {{title}} - Category | {% endblock title %}
+  {% block title %} {{title}} {% endblock title %}
                 {{recipe.category.name}}
 
 {% endif %}
