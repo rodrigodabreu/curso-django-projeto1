@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k!4q41nv2z#t0%g@6z+_6oh0i096vh*)k@i4rs^mq=9r0gbc@b'
+SECRET_KEY = 'django-insecure-k!4q41nv2z#t0%g@6z+_6oh0i096vh*)k@i4rs^mq=9r0gbc@b' # noqa E501
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] # type: ignore
 
 
 # Application definition
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles', # essa configuração é que nos garante que o django vai procurar por arquivos estáticos
+    'django.contrib.staticfiles', # essa configuração é que nos garante que o django vai procurar por arquivos estáticos  # noqa E501
     'recipes',
 ]
 
